@@ -1,4 +1,4 @@
-const hasMeeting = true;
+const hasMeeting = false;
 
 const meeting = new Promise((resolve, reject) => {
     if (!hasMeeting) {
@@ -22,3 +22,6 @@ meeting
         //If the promise is rejected
         console.log(err.message);
     });
+
+    // To check asynchronous nature of promises
+    console.log("Hello there!");
