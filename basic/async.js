@@ -1,4 +1,4 @@
-const processOrder = (customer) => {
+const processOrder = () => {
     console.log(`Processing order for customer 1`);
 
     /**

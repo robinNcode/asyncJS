@@ -1,4 +1,4 @@
-const processOrder = (order) => {
+const aprocessOrder = () => {
     console.log('Processing order for customer 1');
     var currentTime = new Date().getTime();
 
@@ -8,5 +8,5 @@ const processOrder = (order) => {
 };
 
 console.log('Taking order for customer 1');
-processOrder();
+aprocessOrder();
 console.log('Order processed');
