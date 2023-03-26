@@ -3,7 +3,7 @@ const takeOrder = (customer, callback) => {
     callback(customer);
 }
 
-const processOrder = (customer, callback) => {
+const processOrderAsync = (customer, callback) => {
     console.log(`Processing order for ${customer}`);
 
     setTimeout(() => {
@@ -19,7 +19,7 @@ const completeOrder = (customer) => {
 
 // Nested callbacks are called callback hell
 takeOrder('Customer 1', (customer) => {
-    processOrder(customer, (customer) => {
+    processOrderAsync(customer, (customer) => {
         completeOrder(customer);
     });
 });
