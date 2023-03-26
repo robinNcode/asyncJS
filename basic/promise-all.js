@@ -13,3 +13,7 @@ promise2.then(res => console.log(res));
 // all together
 Promise.all([promise1, promise2])
     .then(res => console.log(res));
+
+// to get the first resolved promise
+Promise.race([promise1, promise2])
+    .then(res => console.log(res));
